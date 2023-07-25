@@ -1,0 +1,126 @@
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  transition:all .01s;
+  user-select:none;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+
+.note{
+  position:absolute;
+  top:10px;
+  left:10px;
+  color:#aaa;
+  font-size:1em;
+  text-transform:uppercase;
+}
+
+.note b{
+  color:red;
+}
+
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#F8FAFB;
+}
+
+
+.calculator{
+  width:320px;
+  
+}
+
+.calculator form{
+  border-radius:10px;
+  padding:20px;
+background:#F1F3F6;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+}
+
+
+.calculator form .text{
+  width:100%;
+  height:50px;
+  border:0;
+  outline:0;
+  padding:13px 25px;
+  resize:none;
+  border-radius:50px;
+  margin-bottom:10px;
+  font-size:1.5em;
+  font-weight: 700;
+background: #F1F3F6;
+box-shadow: inset 3px 3px 5px #d2d7e1,
+            inset -3px -3px 5px #F9FAFB;
+  color:#000000;
+  outline:2px solid #F1F3F6;
+}
+
+
+.calculator form .text::-webkit-scrollbar {
+  display: none;
+}
+
+
+.calculator form .button{
+  width:62px;
+  height:62px;
+  border:0;
+  outline:0;
+  margin:4px 2px;
+  border-radius:5px;
+  font-size:1.3em;
+  cursor:pointer;
+  font-weight: 700;
+  background: #F1F3F6;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  color:#000000;
+  outline:2px solid #c7c8ca;
+}
+
+.calculator form .button:hover,
+.calculator form .button:active{
+box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  font-size:1.2em;
+}
+
+
+
+.calculator form .button.btn{
+  background:#121212;
+  color:#eee;
+  font-weight:700;
+}
+
+
+.calculator form .button.btn:hover,
+.calculator form .button.btn:active{
+background: #201f1f;
+box-shadow: rgba(212, 210, 210, 0.05) 0px 0px 0px 1px, rgb(230, 230, 231) 0px 0px 0px 1px inset;
+  font-size:1.2em;
+}
+
+
+
+
+.calculator form .button.ac{
+background: #ff0000;
+  color:#eee;
+}
+
+
+.calculator form .button.ac:hover,
+.calculator form .button.ac:active{
+background: #ff0000;
+box-shadow: inset 5px 5px 5px #d60000,
+            inset -5px -5px 5px #ff0000;
+  font-size:1.2em;
+}

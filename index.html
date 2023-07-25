@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Rajdhani&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <form name="forms">
+        <textarea disabled name="answer" class="text"></textarea>
+
+        <br />
+
+        <input
+          type="button"
+          class="button"
+          value="7"
+          onclick="appendValue('7')"
+        />
+        <input
+          type="button"
+          class="button"
+          value="8"
+          onclick="appendValue('8')"
+        />
+        <input
+          type="button"
+          class="button"
+          value="9"
+          onclick="appendValue('9')"
+        />
+        <input
+          type="button"
+          class="button btn"
+          value="×"
+          onclick="appendValue('*')"
+        />
+
+        <br />
+
+        <input
+          type="button"
+          class="button"
+          value="4"
+          onclick="appendValue('4')"
+        />
+        <input
+          type="button"
+          class="button"
+          value="5"
+          onclick="appendValue('5')"
+        />
+        <input
+          type="button"
+          class="button"
+          value="6"
+          onclick="appendValue('6')"
+        />
+        <input
+          type="button"
+          class="button btn"
+          value="-"
+          onclick="appendValue('-')"
+        />
+
+        <br />
+
+        <input
+          type="button"
+          class="button"
+          value="1"
+          onclick="appendValue('1')"
+        />
+        <input
+          type="button"
+          class="button"
+          value="2"
+          onclick="appendValue('2')"
+        />
+        <input
+          type="button"
+          class="button"
+          value="3"
+          onclick="appendValue('3')"
+        />
+        <input
+          type="button"
+          class="button btn"
+          value="+"
+          onclick="appendValue('+')"
+        />
+
+        <br />
+
+        <input
+          type="button"
+          class="button ac"
+          value="AC"
+          onclick="clearAnswer()"
+        />
+        <input
+          type="button"
+          class="button"
+          value="0"
+          onclick="appendValue('0')"
+        />
+        <input
+          type="button"
+          class="button"
+          value="."
+          onclick="appendValue('.')"
+        />
+        <input
+          type="button"
+          class="button btn btnAns"
+          value="="
+          onclick="calculate()"
+        />
+      </form>
+    </div>
+    <audio
+      id="click"
+      src="./music/mixkit-fast-double-click-on-mouse-275.wav"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+    <script src="./main.js"></script>
+  </body>
+</html>
